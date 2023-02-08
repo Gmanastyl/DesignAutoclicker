@@ -1,3 +1,4 @@
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
@@ -5,6 +6,15 @@ using Avalonia.Interactivity;
 namespace DesignAutoclick.Views;
 
 public partial class MainWindow : Window {
+    
+    private Point clickPosition;
+
+    public Thickness SelectedImageMargin { get; set; } = new();
+
+    private bool ButtonPressed = false;
+
+    private Image SelectedImage;
+    
     public MainWindow() {
         InitializeComponent();
     }
@@ -36,4 +46,17 @@ public partial class MainWindow : Window {
             this.BeginMoveDrag(e);
         }
     }
+    
+
+    private void Slider_OnPointerPressed(object sender, PointerPressedEventArgs e) {
+    }
+
+    private void Slider_OnPointerReleased(object sender, PointerReleasedEventArgs e) {
+        
+    }
+
+    private void Slider_PointerMoved(object sender, PointerEventArgs e) {
+      
+    }
+    
 }
