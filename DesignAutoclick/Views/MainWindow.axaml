@@ -1,12 +1,11 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:DesignAutoclick.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:DesignAutoclick.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="DesignAutoclick.Views.MainWindow"
-        Icon="/Assets/Images/toICON.ico"
+        Icon="/Assets/Images/icon.ico"
         Title="DesignAutoclick" Width="900" Height="600"
         WindowStartupLocation="CenterScreen"
         CanResize="False"
@@ -28,10 +27,9 @@
 
         <!-- Window Controls -->
         <Grid Grid.Column="1" Width="720" Height="600" Background="#1E272E">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="1"
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0" 
                         VerticalAlignment="Top">
-                <Button x:Name="HideButton" Width="70" Height="25" Click="HideButton_Click" HorizontalAlignment="Right"
-                        Margin="0, 11, 11, 0" CornerRadius="50">
+                <Button x:Name="HideButton" Width="70" Height="25" Click="HideButton_Click" HorizontalAlignment="Right" Margin="0, 11, 11, 0" CornerRadius="50">
                     <Image Source="../Assets/Images/hide.png" Width="16" Height="16" />
                 </Button>
                 <Button x:Name="CloseButton" Width="70" Height="25" Click="CloseButton_Click"
@@ -57,14 +55,8 @@
                 </TextBlock>
 
                 <StackPanel Orientation="Horizontal" Width="150" Height="5" Background="#295CED">
-                    <Image Name="SliderRight" PointerPressed="Slider_OnPointerPressed"
-                           PointerReleased="Slider_OnPointerReleased"
-                           Source="../Assets/Images/slider-right.png" Width="10" Height="13" Margin="10, 0, 0, 0">
-                    </Image>
-                    <Image Name="SliderLeft" PointerPressed="Slider_OnPointerPressed"
-                           PointerReleased="Slider_OnPointerReleased"
-                           Source="../Assets/Images/slider-left.png" Width="10" Height="13" Margin="110, 0, 0, 0">
-                    </Image>
+                    <Image Source="../Assets/Images/slider-right.png" Width="10" Height="13" Margin="10, 0, 0, 0"></Image>
+                    <Image Source="../Assets/Images/slider-left.png" Width="10" Height="13" Margin="110, 0, 0, 0"></Image>
                 </StackPanel>
 
                 <Button Width="140" Height="50" Background="#1D252C" HorizontalAlignment="Center" Margin="0, 100, 0, 0"
